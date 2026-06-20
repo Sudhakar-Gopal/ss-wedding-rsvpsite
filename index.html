@@ -276,7 +276,8 @@
     transition:background .15s, color .15s, border-color .15s;
   }
   .chip input{ position:absolute; opacity:0; pointer-events:none; }
-  .chip.active{ background:rgba(184,134,46,0.15); border-color:var(--gold); color:var(--maroon-deep); font-weight:600; animation: pop .3s ease; }
+  .chip.active{ background:var(--maroon); border-color:var(--maroon); color:var(--cream); font-weight:600; animation: pop .3s ease; }
+  .chip.active::before{ content:"✓ "; }
   .chip:focus-within{ outline:2px solid var(--gold); outline-offset:2px; }
 
   .stepper{ display:flex; align-items:center; gap:16px; justify-content:center; }
